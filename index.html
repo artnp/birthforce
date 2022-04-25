@@ -15,7 +15,7 @@
 <body>
 <center>
 <img src="Numerology_Types-3.jpg" width="4%">
-<h3>Birthforce</h3> NAME : <input type="text" id="name" style="font-size:30px;width:300px;height:40px" >
+<h3>Birthforce</h3> NAME : <input type="text" id="name" style="font-size:30px;width:300px;height:40px" value="Patcharaphon Napapornpipat" >
 <br><b>D•O•B</b><br>
     MONTH : <select id="month"  style="font-size:30px;width:160px;height:30px" >
         <option value="3">March</option>
@@ -32,8 +32,8 @@
         <option value="11">November</option>
         <option value="3">December</option>
       </select> 
- DAY : <input type="text" id="day" style="font-size:30px;width:50px;height:30px" >
- YEAR : <input type="text" id="year" style="font-size:30px;width:70px;height:30px" >
+ DAY : <input type="text" id="day" style="font-size:30px;width:50px;height:30px" value="10" >
+ YEAR : <input type="text" id="year" style="font-size:30px;width:70px;height:30px" value="1992" >
 
     => <button class="cal" onsubmit="cal()" style="font-size:18px">Projection</button></center>
 <center>  <font color="#fff"><div id="resultName"></div></font>
@@ -127,6 +127,7 @@ function Ask() {
 }}
 document.getElementById("resultName").innerHTML = nameCal
 }
+
 
 if (day === '1'){
     dayCal = '1'
@@ -347,103 +348,102 @@ if (soulUrgeCal === 1){
 //////////////////////////////////////////////////////////Birthday///////////////////////////////////////
 
 
-
-      if (day === 1){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      if (day === '1'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Independent attitude.<br> Executive ability, good leader.<br> Ambitious, positive, progressive.<br> Self-confident.<br> Much will power.<br> Potential for achievement and financial reward.<br> Good mind.<br> Practical, rational.<br> Often original approach.<br> Sensitive, rarely shows feelings.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 1 energy only. No sub- emphasis on other energies.)'
-      } else if (dayBirthdaytxt === 10){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      } else if (day === '10'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Independent attitude.<br> Much energy.<br> Executive ability, excellent leader.<br> Ambitious, positive, progressive.<br> Self-confident.<br> Much will-power.<br> Strong potential for achievement and financial reward.<br> Compelling manner, can dominate a situa- tion.<br> Excellent mind.<br> Practical, rational.<br> Creative ideas, strongly marked originality.<br> Sensitive, feelings usually repressed.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 1 energy only is similar to the 1 Birthday above, but the energy is more, strongly expressed here. No sub-emphasis on other energies.)'
       }
-      else if (day === 19){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      else if (day === '19'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Independence strongly desired, usually obsta()l~,to>overcome before dependence is overcome.<br> Executive ability.<br> Ambitious.<br> Much will power.<br> Creative, imaginative.<br> Tendency to be self-centered, inability to see self in relation to others.<br> Good mind.<br> Practical, rational.<br> Often original or unconventional approach. Strong sensitivity may involve individual in dramatic situations.<br> Feelings usually repressed.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 1 and 19/1 energy. Sub-emphasis on 9 energy.)'
-      }else if (day === 28){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '28'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Independent attitude, but can work well with others.<br> Executive ability, good leader.<br> Organizing, managing, administrative capabilities.<br> Ambitious.<br> Diplomatic, uses persuasion rather than force.<br> Creative, imaginative.<br> Potential for achievement and financial reward.<br> Good mind.<br> Practical, rational.<br> Often original approach.<br> Sensitive, represses a good deal of feelings.<br> Affectionate.<br> Good at starting, capable of continuing.<br> Good at broad strokes, capable of taking care of details.<br> (Emphasis on 1 energy. Sub-em- phasis on 2 and 8 energy.)'
-      }else if (day === 2){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '2'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others.<br> Prefers partnerships to individual enterprises.<br> Sociable, friendly.<br> Diplomatic, uses persuasion rather than force.<br> Considerate, courteous, modest.<br> Cooperative, adaptable.<br> Much sensitivity to other\'s feelings, much feeling expressed.<br> Occasional moods of depression.<br> Affectionate.<br> Better at continuing than starting.<br> Good with details.<br> (Emphasis on 2 energy only. No sub-emphasis on other energies.)'
-      }else if (day === 11){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '11'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others.<br> Often inspires by example.<br> Uses persuasion rather than force.<br> Spiritual, occult or psychic explorations.<br> Idealistic.<br> Creative.<br> Nervous tension.<br> Uncomfortable in business world.<br> Good mind, analytical ability.<br> Good intuition.<br> Very aware and sensitive, often high emo- tions, temperamental.<br> More dreamer than doer.<br> (Emphasis on 11 and 2 energy. No sub-emphasis on other energies.)'
-      }else if (day === 20){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '20'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works very well with others.<br> Prefers partnerships to individual-enterprises.<br> Very sociable, friendly.<br> Much attention to family, close friends.<br> Diplomatic, uses persuasion rather than force.<br> Considerate, courteous, modest.<br> Cooperative, adaptable. <br> Extreme sensitivity to other\'s feelings, much feeling expressed.<br> Some moods of depression.<br> Very affectionate.<br> Better at continuing than starting.<br> Good with details.<br> (Emphasis on 2 energy only is similar to the 2 Birthday above, but energy is more strongly expressed here. No sub-emphasis on other energies.)'
-      }else if (day === 29){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '29'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = '29 reduces to the master number 11'
-      }else if (day === 3){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '3'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good with words-writing, speaking, sing- ing.<br> Can sell or entertain.<br> Artistic, creative, good imagination.<br> Expresses joy of living.<br> Enthusiastic, optimistic, cheerful.<br> Friendly, sociable.<br> Good conversationalist.<br> Energetic.<br> Affectionate, loving.<br> Much feeling may cause occasional rapid ups and downs.<br> Scatters energy.<br> Involved with trivial or superficial matters.<br> Many interests, but may be bored easily.<br> (Emphasis on 3 energy only. No sub- emphasis on other energies.)'
-      }else if (day === 12){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '12'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good with words-writing, speaking, sing- ing.<br> Works well alone or with others.<br> Original approach.<br> Artistic, creative, good imagination.<br> Expresses joy of living.<br> Enthusiastic, optimistic, cheerful.<br> Friendly, sociable.<br> Good conversationalist.<br> Energetic.<br> Good mind.<br> Practical, rational.<br> Very affectionate and loving. Very sensitive.<br> Much feeling may cause occasional rapid ups and downs.<br> May repress feelings in business.<br> Sometimes scatters energy.<br> Sometimes involved with trivial or superficial matters.<br> Many interests.<br> Good at broad strokes or with details. (Emphasis on 3 energy. Sub-empha- sis on 1 and 2 energy.)'
-      }else if (day === 21){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '21'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good with words-writing, speaking, sing- ing.<br> Works well alone or with others.<br> Often uses original approach.<br> Artistic, creative, good imagination.<br> Expresses joy of living.<br> Enthusiastic, optimistic, cheerful.<br> Friendly, sociable.<br> Good conversationalist.<br> Energetic.<br> Good mind.<br> Practical, rational.<br> Very affectionate and loving.<br> Very sensitive.<br> Much feeling may cause occasional rapid ups and downs.<br> May repress feelings in business.<br> Sometimes scatters energy.<br> Sometimes involved with trivial or superficial matters.<br> Many interests.<br> Good at broad strokes or with details.<br> (Emphasis on 3 energy. Sub-empha- sis on 2 and 1 energy.)'
-      }else if (day === 30){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '30'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Talent with words-writing, speaking, sing- 30 ing.<br> Can sell or entertain.<br> Very artistic, very creative, fine imagination.<br> Expresses joy of living.<br> Enthusiastic, optimistic, cheerful.<br> Very friendly and sociable.<br> Excellent conversationalist.<br> Very energetic.<br> Very affectionate and loving.<br> Strong feeling may cause upsets.<br> Scatters energy.<br> Involved with trivial or superficial matters.<br> Many interests, but may be bored easily.<br> May not take care of work or responsibility.<br> (Emphasis on 3 energy only is similar to the 3 Birthday above, but the en- ergy is more strongly expressed here. No sub-emphasis on other energies.)'
-      }else if (day === 4){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '4'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good organizer, manager.<br> Works long and hard, conscientious, de- pendable.<br> Responsible, self-disciplined.<br> Serious, sincere, honest.<br> Patient, persevering, determined.<br> Proceeds despite seeming limitations.<br> Very practical, rational.<br> Some rigidity or stubbornness, Feeling generally repressed.<br> Shows little affection. Has difficulty attract- ing affection, Patient with details, insists on accuracy.<br> May concentrate on details and miss the big picture.<br> (Emphasis on 4 energy only. No sub- emphasis on other energies,)'
-      }else if (day === 13){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '13'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good organizer, manager, but may dominate and irritate others.<br> Executive ability.<br> Works long, hard, energetically, dependably.<br> Responsible, self-disciplined, enthusiastic, Serious, sincere, persevering.<br> Feels limited or restricted a good deal of the time, causing frustration or depression.<br> Good mind.<br> Very practical.<br> Tends to be very rigid, obstinate, dogmatic.<br> Others may see him as unreasonable.<br> Feelings usually repressed, Shows some affection, Has difficulty attract- ing affection.<br> Insists on accuracy.<br> Concentrates on details, often misses the big picture.<br> (Emphasis on 4 and 13/4 energy. Sub-emphasis on 1 and 3 energy.)'
-      }else if (day === 22){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '22'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Capable of handling large scale under-takings.<br> Capable of leading in new directions.<br> Extremely capable organizer.<br> Unorthodox approach.<br> Responsible, serious, sincere, works long and hard.<br> Idealistic, desire to work for the good of all.<br> Inner strength, often charisma.<br> Nervous tension.<br> Much unusual perception and awareness.<br> Good intuition.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 22 and 4 energy. No sub-emphasis on other energies.)'
-      }else if (day === 31){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '31'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Good organizer, manager.<br> Works hard, energetic, dependable, en- th usiastic.<br> Good in the business world.<br> Good conversationalist.<br> Responsible, helpful.<br> Serious, sincere.<br> Patient, persevering, determined.<br> Good mind.<br> Very practical, rational, but some im- agination shown.<br> Often original approach.<br> Some rigidity or stubbornness.<br> Sensitive, but feelings usually repressed.<br> Good with details, insists on accuracy.<br> Sometimes scatters energy.<br> (Emphasis on 4 energy. Sub-empha- sis on 3 and 1 energy.)'
-      }else if (day === 5){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '5'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Enjoys and works well with others.<br> Talented and versatile, good at presenting ideas.<br> Likes new experience, change, travel.<br> Entertaining, amusing, enthusiastic, pro- gressive.<br> Adaptable.<br> Sociable, delightful companion.<br> Imaginative.<br> Quick mind, clever, analytical.<br> Restless, impatient, chafes at routine.<br> May shirk responsibility.<br> (Emphasis on 5 energy only. No sub- emphasis on other energies.)'
-      }else if (day === 14){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '14'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Enjoys working with others.<br> Talented and versatile, can organize and sys- tematize.<br> Capable of hard work at times, usually not consistently.<br> Desires new experience, change, travel, often with little sense of proportion.<br> May overindulge in eating, sensuality, liquor, drugs.<br> Entertaining, amusing, enthusiastic, progres- sive.<br> Usually adaptable.<br> Sociable.<br> Quick mind, clever, analytical.<br> Practical.<br> Often original approach.<br> Restless, impatient, somewhat erratic-tends to jump from activity to activity with little sense of accomplishment or accountability.<br> Often shirks responsibility~<br> (Emphasis on 5 and 14/5 energy. Sub-emphasis on 1 and 4 energy.)'
-      }else if (day === 23){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '23'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Enjoys and works extremely well with others .. , Sometimes spokesman or peacemaker.<br> Talented and versatile, good at presenting ideas.<br> Likes new experience, change, travel.<br> Entertaining, amusing, very enthusiastic, progressive.<br> Adaptable.<br> Very sociable, delightful companion.<br> Very imaginative, artistic, creative.<br> Energetic.<br> Quick mind, clever, analytical.<br> Sensitivity to other\'s feelings with most feel- ings expressed.<br> Affectionate.<br> Restless, impatient, chafes at routine.<br> Shirks responsibility at times.<br> (Emphasis on 5 energy. Sub-empha- sis on 2 and 3 energy.)'
-      }else if (day === 6){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '6'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Responsible, helpful, conscientious.<br> Can facilitate changes in inharmonious situa-tions.<br> Sympathetic, kind, generous, understand-ing.<br> Open and honest with others.<br> Devoted spouse and parent, much interest· in home, family.<br> Creative, artistic.<br> Good mind.<br> Much emotion and sensitivity.<br> Loving, friendly, appreciative of others.<br> Gives and receives much affection.<br> Better at continuing than starting.<br> Will pick up responsibilities if others falter.<br> (Emphasis on 6 energy only. No sllb-emphasis on other energies.)'
-      }else if (day === 15){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '15'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Usually responsible, but independent at the same time.<br> Helpful, conscientious.<br> Can facilitate changes in inharmonious situa-tions.<br> Much will-power.<br> Sympathetic, understanding.<br> Adaptable, enthusiastic.<br> Devoted spouse and parent, interest in home, family.<br> Creative, artistic, imaginative.<br> Potential for achievement and financial reward.<br> Good mind.<br> Practical, rational.<br> Emotion and sensitivity, sometimes represses<br> feelings.<br> Loving, friendly, appreciative of others.<br> Gives and receives affection.<br> (Emphasis on 6 energy. Sllb-empha-sis on 1 and 5 energy.)'
-      }else if (day === 24){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '24'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Responsible, helpful, conscientious.<br> Sometim.es. SPRktl,sman or peacemaker.<br> Can facilitate changes in inharmonious situa-tions.<br> Works well with others.<br> Sympathetic, kind, generous, understanding.<br> Devoted spouse and parent, interest in home, family.<br> Creative, artistic.<br> Good organizer, manager.<br> Can work long and hitrd, self-disciplined.<br> Good mind.<br> Practical, rational.<br> Much emotion and sensitivity, represses some feelings.<br> Loving, friendly, appreciative of others.<br> Gives and receives much affection.<br> Better at continuing than starting.<br> Will pick up responsibilities if others falter.<br> Good with details.<br> (Emphasis on 6 energy. Sub-empha-sis on 2 and 4 energy.)'
-      }else if (day === 7){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '7'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Not too adaptable, prefers to work alone but often feels isolated.<br> Needs time to rest or meditate.<br> Introspective, stubborn, self-centered.<br> Usually interested in technical, scientific, re-ligious or occult subjects.<br> Likely to enjoy spiritual or psychic explora-tions.<br> Given to unique or unusual approaches or solutions. Fine mind, good intuition.<br> Logical, rational approach.<br> Feels deeply, usually represses emotions.<br> Extremely sensitive, but relatively uncom-municative.<br> Difficulty giving or receiving affection.<br> Can carry work from start to finish using own approach at own pace.<br> Perfectionist, stickler for details.<br> (Emphasis on 7 energy only. No sub-emphasis on other energies.)'
-      }else if (day === 16){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '16'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Relatively inflexible, insists on independence.<br> Prefers to work alone but usually feels lonely.<br> Needs time to rest or meditate.<br> Introspective, stubborn, self-centered.<br> Difficult to maintain permanent relations.<br> Interest in home, family, but strong personal needs at the same time.<br> Usually interested in technical, scientific, re-ligious or occult subjects.<br> Likely to enjoy spiritual explorations.<br> Given to unique or unusual approaches.<br> "Different" wavelength may confuse others.<br> Potential for achievement and financial reward.<br> Fine mind, good intuition.<br> Logical, rational approach. Responsible.<br> Feels deeply, usually represses emotions.<br> Extremely sensitive, but usually uncommun-icative.<br> Much difficulty giving or receiving affection.<br> Can carry work from start to finish using own approach at own pace.<br> Perfectionist, stickler for details.<br> (Emphasis on 7 and 16/7 energy.Sub-emphasis on 1 and 6 energy.)'
-      }else if (day === 25){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '25'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Often not too adaptable.<br> Needs tim~(to> rest or meditate.<br> Introspective, sometimes stubborn, sometimes self-centered.<br> Cautiously friendly, quiet enthusiasm, some-times peacemaker.<br> Cautiously enjoys new experience.<br> Usually interested in technical, scientific, religious or occult subjects.<br> Likely to enjoy spiritual or psychic explora-tions.<br> Given to unique or unusual approaches or solutions.<br> Fine mind, good intuition.<br> Logical, rational approach.<br> Feels deeply, often represses emotions.<br> Extremely sensitive, but often uncommuni-cative.<br> Some difficulty giving or receiving affection.<br> Better at continuing than starting, occasional restlessness.<br> Stickler for details.<br> (Emphasis on 7 energy. Sub-empha-sis on 2 and 5 energy.)'
-      }else if (day === 8){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '8'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Very capable in business world, prefers to be in charge.<br> Organizational, managerial, administrative capabilities.<br> Can handle large projects.<br> Efficient, can handle money well.<br> Ambitious, energetic, goal-oriented.<br> Self-confident.<br> Dependable.<br> Seeks material satisfactions.<br> Practical, realistic.<br> Expresses little feeling.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 8 energy only. No sub-emphasis on other energies.)'
-      }else if (day === 17){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '17'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Very capable in business world, prefers to be in charge.<br> Independent attitude, executive ability.<br> Organizational, managerial, administrative capabilities.<br> Can handle large projects.<br> Efficient, can handle money well.<br> Ambitious, energetic, goal-oriented.<br> Stubborn or self-centered.<br> Self-confident.<br> Dependable.<br> Seeks material satisfactions.<br> Good mind, good intuition.<br> Practical, realistic.<br> Often original approach, unique or unusual solutions.<br> Sensitive, but usually represses feelings.<br> Difficulty giving or receiving affection.<br> Better at starting than continuing.<br> Better at broad strokes than details.<br> (Emphasis on 8 energy. Sub-empha-sis on 1 and 7 energy.)'
-      }else if (day === 26){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '26'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Capable in business world, works well with others.<br> Organizational, managerial, administrative capabilities.<br> Efficient, can handle money well.<br> Ambitious, energetic.<br> Adaptable, cooperative, responsible, con-scientious.<br> Self-confident.<br> Dependable.<br> Sociable, diplomatic. Uses persuasion rather than force.<br> Seeks material satisfactions.<br> Creative, artistic.<br> Good mind.<br> Practical, realistic.<br> Sensitive, expresses some of the feelings.<br> Affectionate, but reserved.<br> Good at starting and continuing.<br> Good at broad strokes and details.<br> (Emphasis on 8 energy. Sub-empha-sis on 2 and 6 energy.)'
-      }else if (day === 9){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '9'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others.<br> Humanistic, philanthropic approach.<br> Broadminded, tolerant, generous.<br> Sympathetic, compassionate.<br> Idealistic, can inspire others.<br> Creative, imaginative.<br> Sensitive to other\'s needs and feelings .<br> Much feeling expressed, may be involved in many dramatic situations.<br> Gives much in the way of friendship, affec- tion, love. Can sometimes be content with minimal return.<br> (Emphasis on 9 energy only. No sub- emphasis on other energies.)'
-      }else if (day === 18){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '18'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others but must preserve in- dependence.<br> Humanistic, philanthropic approach, often in business situations.<br> Executive ability.<br> Organizational, managerial, administrative capabilities.<br> Broadminded, tolerant, generous.<br> Sympathetic, compassionate.<br> Much will-power.<br> Idealistic, can inspire others.<br> Creative, imaginative.<br> Potential for achievement and financial reward.<br> Good mind.<br> Practical, rational.<br> Sensitive.<br> Some feelings expressed but much repressed, may be involved in many dramatic situa- tions.<br> Gives some friendship, affection, love. Can sometimes be content with minimal return.<br> (Emphasis on 9 energy. Sub-empha- sis on 1 and 8 energy.)'
-      }else if (day === 27){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '27'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others.<br> Needs some,time to rest and ·meditate.<br> Humanistic, philanthropic approach.<br> Broadminded, tolerant, generous, coopera- tive.<br> Sympathetic, compassionate.<br> Occasional introspective or self-centered needs.<br> Sociable, uses persuasion rather than force.<br> Idealistic, can inspire others.<br> Creative, imaginative, unique or unusual approaches or solutions.<br> Good mind, logical approach.<br> Extremely sensitive to other\'s needs and feel- ings.<br> Much feeling expressed, may be involved in many dramatic situations.<br> Gives much in the way of friendship, affec- tion, love. Can sometimes be content with minimal return.<br> (Emphasis on 9 energy. Sub-empha- sis on 2 and 7 energy.)'
-      }else if (day === 29){
-      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + dayBirthdaytxt + '</u>'
+      }else if (day === '29'){
+      document.getElementById("dayBirthday").innerHTML = '<hr>The Birthday is <u>' + day + '</u>'
       document.getElementById("dayBirthdaytxt").innerHTML = 'Works well with others.<br> Often inspires by example.<br> Uses persuasion rather than force.<br> Spiritual, occult or psychic explorations.<br> Idealistic.<br> Much creativity, imagination.<br> Nervous tension.<br> Uncomfortable in business world.<br> Good mind, analytic.al ability.<br> Good intuition.<br> Very aware and sensitive, often high emo-tions, temperamental.<br> May be involved in dramatic situations.<br> Gives much in the way of friendship, affec-tion, love. Can sometimes be content with minimal return.<br> More dreamer than doer.<br> (Emphasis on 11 and 2 energy. Sub-emphasis on 9 energy.)'
       }
 
